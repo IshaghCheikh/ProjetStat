@@ -1,0 +1,18 @@
+data/.DS_Store
+
+# Fichiers de données à ignorer
+*.csv
+*.xlsx
+*.xls
+data/
+
+# Fichiers Python temporaires
+__pycache__/
+*.ipynb_checkpoints
+.venv/
+.env
+
+# Fichiers VSCode
+.vscode/ 
+
+.DS_Store
