@@ -1,7 +1,7 @@
 data/.DS_Store
 
 # Fichiers de données à ignorer
-*.csv
+#*.csv
 *.xlsx
 *.xls
 data/
