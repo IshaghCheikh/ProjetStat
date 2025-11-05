@@ -319,7 +319,8 @@ def main():
         'Population_i': 'P_i_t', 'Population_j': 'P_j_t',
         'IMR_i': 'IMR_i_t', 'IMR_j': 'IMR_j_t', # C'est le proxy U5MR
         'Urban_i': 'urban_i_t', 'Urban_j': 'urban_j_t',
-        COLS['period']: 'period'
+        COLS['period']: 'period',
+        COLS['dest']: 'dest'
     })
     
     final_cols = [
@@ -337,7 +338,7 @@ def main():
     master_df = master_df.dropna()
     print(f"Shape final après suppression des NaN: {master_df.shape}")
 
-    output_path = 'master_gravity_data.csv'
+    output_path = 'gravity_data.csv'
     master_df.to_csv(output_path, index=False)
     
     print("--- Pipeline terminé ! ---")
