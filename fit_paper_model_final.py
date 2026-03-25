@@ -21,8 +21,8 @@ warnings.filterwarnings("ignore")
 # CONFIG
 # ============================================================================
 N_CHAINS = 4
-N_WARMUP = 1000
-N_SAMPLES = 1000
+N_WARMUP = 500
+N_SAMPLES = 500
 SEED = 42
 PROJ = Path(__file__).parent
 DATA_FLOWS = PROJ / "data" / "azoseRaftery2019flows.csv"
@@ -239,6 +239,7 @@ def fit_stan(stan_file, stan_data, label):
         show_console=False,
         adapt_delta=0.95,
         max_treedepth=12,
+        threads_per_chain=4,
         inits=0,
     )
     elapsed = time.time() - t0
