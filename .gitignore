@@ -15,4 +15,5 @@ __pycache__/
 # Fichiers VSCode
 .vscode/ 
 
-.DS_Store
+.DS_Storeposteriors_final/inflow_posteriors.npz
+posteriors_final/inflow_posteriors.npz
