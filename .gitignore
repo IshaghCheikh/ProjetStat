@@ -17,3 +17,4 @@ __pycache__/
 
 .DS_Storeposteriors_final/inflow_posteriors.npz
 posteriors_final/inflow_posteriors.npz
+posterior_final_V2/inflow_posteriors.npz
